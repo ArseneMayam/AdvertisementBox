@@ -1,7 +1,6 @@
 /**
  * Created by mayamarsene on 29/05/18.
  */
-
 let loaderDiv = document.getElementById("loaderDiv");
 console.log("loaderDiv",loaderDiv);
 

@@ -1,7 +1,6 @@
 /**
  * Created by mayamarsene on 28/05/18.
  */
-
 document.addEventListener("DOMContentLoaded",function () {
     console.log("DOMContentLoaded");
 
