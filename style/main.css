@@ -1,0 +1,916 @@
+/*************MOBILE DEVICES*************/
+body{
+    margin:0;
+}
+
+/*Defaul Ad Box*/
+#defaultAdbox {
+    background-color: black;
+    background: url("../images/JPGv4/300x250_1.jpg") no-repeat;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation-name: adBoxAnimation;
+    -webkit-animation-name: adBoxAnimation;
+    -o-animation-name: adBoxAnimation;
+    animation-duration: 4s;
+    -o-animation-duration: 4s;
+}
+
+/*The modal*/
+#modalbox {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.75); /* Black w/ opacity */
+}
+/******The main advertising modal box*******/
+#adbox {
+    background: url("../images/JPGv4/300x250_3.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #fefefe;
+    margin: auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /*ou 80% */
+    height: 80%;
+    position: absolute;
+    top:10%;
+    right: 0;
+    left: 0;
+}
+
+#loaderDiv {
+    position: absolute;
+    height: 10px;
+    width: 0;
+    background-color: rgba(93, 145, 187, 0.9);
+    top: 43%;
+    left: 20%;
+}
+
+/*The modal*/
+#modalbox {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.75); /* Black w/ opacity */
+}
+/******The main advertising modal box*******/
+.mobileModalBox{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.75); /* Black w/ opacity */
+
+}
+
+
+.mobileAdBox{
+    background: url("../images/JPGv4/300x250_ps4.jpg") no-repeat center;
+    background-color: #fefefe;
+    margin: auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 940px; /*ou 80% */
+    height: 1000px;
+    position: absolute;
+}
+
+.mobileTimerDiv{
+    background-color: azure;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+}
+
+.mbDisplayTimer{
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+.mbhide{
+    display: none;
+}
+
+#mbWatchDogsLogo{
+    background-color: rgba(93, 145, 187, 0);
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 8%;
+}
+
+#centerMobileDiv{
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    top: 22%;
+}
+
+#rollOverDiv{
+    position: absolute;
+    width: 100%;
+    height: 11%;
+    top: 74%;
+}
+
+#bottomMobileDiv{
+    position: absolute;
+    width: 100%;
+    height: 12%;
+    bottom: 0;
+}
+#exitMobileDiv{
+    background: url("../images/close-window.png" )no-repeat center;
+    position: absolute;
+    width: 10%;
+    height: 8%;
+    right: 0;
+}
+#exitMobileDiv:hover{
+    background-color: rgba(254, 43, 57, 0.1);
+}
+#mobileLogo{
+    background-color: rgba(93, 145, 187, 0.3);
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 15%;
+    box-shadow: 12px 12px 30px rgba(187, 55, 63, 0.98);
+    border-radius: 12%;
+}
+#messageBox{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 3%;
+}
+
+/**/
+#linkRollOver{
+    box-shadow: inset 0 0 0 1px #b5d4ea;
+    position: absolute;
+    width: 69%;
+    height: 100%;
+    left: 19%;
+    bottom: 0;
+}
+
+#linkRollOver:hover{
+    cursor: pointer;
+    -moz-transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+#ps3_Img{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+#ps3_Img:hover,#ps4_Img:hover,#mbUbisoftLink:hover,#messageBox:hover{
+    cursor: pointer;
+}
+#ps4_Img{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 30%;
+    bottom: 0;
+}
+
+#mbUbisoftLink{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+/*************/
+.divOnHover{
+    transition:all 3s;
+    -o-transition:all 3s;
+    -moz-transition:all 3s;
+    -webkit-transition:all 3s;
+}
+.divOnHover:hover{
+    transform: scale(1.1);
+
+}
+
+/******************END MOBILE DEVICES******************/
+/************MEDIUM SCREEN**********/
+@media only screen and (min-width:768px){
+    body{
+        margin: 0;
+       /* background-color: rgba(187, 24, 183, 0.9);*/
+    }
+    /*Defaul Ad Box*/
+    #defaultAdbox {
+        background-color: black;
+        background: url("../images/JPGv4/300x250_1.jpg");
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation-name: adBoxAnimation;
+        -webkit-animation-name: adBoxAnimation;
+        -o-animation-name: adBoxAnimation;
+        animation-duration: 4s;
+        -o-animation-duration: 4s;
+    }
+    /*The modal*/
+    #modalbox {
+        display: none;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.75); /* Black w/ opacity */
+    }
+
+    /******The main advertising modal box*******/
+    #adbox {
+        background: url("../images/JPGv4/960x600_JOIN.jpg") no-repeat center;
+        background-color: #fefefe;
+        margin: auto; /* 15% from the top and centered */
+        border: 1px solid #888;
+        width: 940px; /*ou 80% */
+        height: 600px;
+        position: relative;
+    }
+
+    #quitAdBox {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        right: 23px;
+        top: 20px;
+    }
+
+    #joinLinkAdBox {
+        width: 120px;
+        height: 60px;
+        position: absolute;
+        left: 34%;
+        top: 0;
+    }
+
+    #joinLinkAdBox:hover {
+        box-shadow: inset 0 0 0 8px #b5d4ea;
+    }
+
+    #mediaLinkAdBox {
+        width: 100px;
+        height: 60px;
+        position: absolute;
+        left: 47%;
+        top: 0;
+    }
+
+    #infoLinkAdBox {
+        width: 90px;
+        height: 60px;
+        position: absolute;
+        left: 58%;
+        top: 0;
+    }
+
+    #ubisoftLinkAdBox {
+        width: 153px;
+        height: 60px;
+        position: absolute;
+        left: 2%;
+        bottom: 0;
+    }
+
+    #facebkLinkAdBox {
+        width: 153px;
+        height: 25px;
+        position: absolute;
+        left: 30%;
+        bottom: 25px;
+    }
+
+    #twitterLinkAdBox {
+        width: 153px;
+        height: 25px;
+        position: absolute;
+        left: 47%;
+        bottom: 25px;
+    }
+
+    #preOrderLinkAdBox {
+        width: 169px;
+        height: 45px;
+        position: absolute;
+        left: 74%;
+        bottom: 20px;
+    }
+
+    #adboxImg {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /****************END main adBox************/
+    /******TIMER COUNTDOWN****/
+    #displayTimer {
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        left: 40%;
+        top: 20%;
+
+        /*  margin-left: 150px;*/
+
+    }
+
+    #timerDiv {
+        background-color: azure;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: 50%;
+        top: 5%;
+    }
+
+    /****END***/
+    /****Video Trailer */
+    #trailerDiv {
+        position: absolute;
+        top: 17%;
+        left: 45%;
+    }
+
+    #trailerButtonDiv{
+        color: aqua;
+        position: absolute;
+        bottom: 8px;
+        left: 35%;
+    }
+    .mbhide{
+        display: block;
+    }
+    button{
+        background-color: aqua;
+        width: 150px;
+        height: 50px;
+        font-size: large;
+        border-radius:2%;
+    }
+    #trailerButton:hover{
+        background-color: rgba(93, 145, 187, 0.9);
+    }
+    /**/
+    #loaderDiv {
+        position: absolute;
+        height: 10px;
+        width: 0;
+        background-color: rgba(93, 145, 187, 0.9);
+        top: 43%;
+        left: 20%;
+    }
+
+
+
+    /******Default ad box animation******/
+    @keyframes adBoxAnimation {
+        0% {
+            background: url("../images/JPGv4/300x250_1.jpg");
+        }
+        25% {
+            background: url("../images/JPGv4/300x250_2.jpg");
+        }
+        50% {
+            background: url("../images/JPGv4/300x250_3.jpg");
+        }
+        75% {
+            background: url("../images/JPGv4/300x250_2.jpg");
+        }
+        100% {
+            background: url("../images/JPGv4/300x250_1.jpg");
+        }
+    }
+
+    .linkAdBox:hover {
+        cursor: pointer;
+    }
+
+    /*Watch Dogs Logo Animation*/
+    #watchDogsLogo{
+        background-color: rgba(93, 145, 187, 0.3);
+        position: absolute;
+        width: 24%;
+        height: 50px;
+        top:20px;
+        left: 2%;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.98);
+
+    }
+
+
+    /*End*/
+    /*Pre Order Image Animation*/
+    #preOrderImg{
+        background-color: rgba(93, 145, 187, 0.5);
+        position: absolute;
+        width: 40%;
+        height: 25%;
+        top:15%;
+        left: 5%;
+        box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.98);
+    }
+    /*END*/
+    /*PS4 Image*/
+    #ps4_1{
+        background-color: rgba(93, 145, 187, 0.5);
+        position: absolute;
+        width: 23%;
+        height: 45%;
+        top:41%;
+        left: 26%;
+    }
+
+    #ps4_2{
+        background-color: rgba(93, 145, 187, 0.5);
+        position: absolute;
+        width: 24%;
+        height: 20%;
+        top:65%;
+        left: 50%;
+    }
+
+    /*************/
+    .divOnHover{
+        transition:all 3s;
+        -o-transition:all 3s;
+        -moz-transition:all 3s;
+        -webkit-transition:all 3s;
+    }
+    .divOnHover:hover{
+        transform: scale(1.1);
+
+    }
+
+    .psOnHover{
+        transition: all 3s;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.98);
+
+    }
+    .psOnHover:hover{
+        transform: scale(1.1);
+    }
+
+    #mbWatchDogsLogo{
+        display: none;
+    }
+
+    #centerMobileDiv{
+        display: none;
+    }
+    #rollOverDiv{
+        display: none;
+    }
+    #bottomMobileDiv{
+        display: none;
+    }
+    #exitMobileDiv{
+        display: none;
+    }
+    #mobileLogo{
+        display: none;
+    }
+    #messageBox{
+        display: none;
+    }
+    #linkRollOver{
+        display: none;
+    }
+    #ps3_Img,#ps4_Img,#mbUbisoftLink{
+        display: none;
+    }
+
+    #sliderContainer{
+        position: absolute;
+        height: 45%;
+        width: 20%;
+        background-color: rgba(93, 145, 187, 0.9);
+        top: 41%;
+        left: 5%;
+    }
+
+
+    /**********SLIDER*******/
+
+    #overflow{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .photo img{
+        width: 100%;
+    }
+
+    #slides .inner{
+        width: 500%;
+    }
+
+    #slides .photo{
+        float: left;
+        width: 20%;
+        position: relative;
+    }
+
+    input{
+        display: none;
+    }
+
+    #slide1:checked ~ #slides .inner{
+        margin-left:0 ;
+    }
+    #slide2:checked ~ #slides .inner{
+        margin-left: -100%;
+    }
+    #slide3:checked ~ #slides .inner{
+        margin-left: -200%;
+    }
+
+    #slides .inner{
+        transition: all 1s ease-in-out;
+    }
+
+    #slider{
+        text-align: center;
+        margin: 0;
+    }
+
+    #active label{
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background: red;
+        display: inline-block;
+    }
+    #active{
+        text-align: center;
+    }
+
+}
+/********************END MEDIUM DEVICES****************/
+
+/********************DESKTOP DESKTOP DEVICES********************/
+@media only screen and (min-width:992px){
+
+    body{
+        margin: 0;
+      /* background-color: rgba(187, 77, 101, 0.9);*/
+    }
+
+    /*Defaul Ad Box*/
+    #defaultAdbox {
+        background-color: black;
+        background: url("../images/JPGv4/300x250_1.jpg");
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation-name: adBoxAnimation;
+        -webkit-animation-name: adBoxAnimation;
+        -o-animation-name: adBoxAnimation;
+        animation-duration: 4s;
+        -o-animation-duration: 4s;
+    }
+    /*The modal*/
+    #modalbox {
+        display: none;
+        position: fixed; /* Stay in place */
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.75); /* Black w/ opacity */
+    }
+
+    /******The main advertising modal box*******/
+    #adbox {
+        background: url("../images/JPGv4/960x600_JOIN.jpg") no-repeat center;
+        background-color: #fefefe;
+        margin: auto; /* 15% from the top and centered */
+        border: 1px solid #888;
+        width: 940px; /*ou 80% */
+        height: 600px;
+        position: relative;
+    }
+
+    #quitAdBox {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        right: 23px;
+        top: 20px;
+    }
+
+    #joinLinkAdBox {
+        width: 120px;
+        height: 60px;
+        position: absolute;
+        left: 34%;
+        top: 0;
+    }
+
+    #joinLinkAdBox:hover {
+        box-shadow: inset 0 0 0 8px #b5d4ea;
+    }
+
+    #mediaLinkAdBox {
+        width: 100px;
+        height: 60px;
+        position: absolute;
+        left: 47%;
+        top: 0;
+    }
+
+    #infoLinkAdBox {
+        width: 90px;
+        height: 60px;
+        position: absolute;
+        left: 58%;
+        top: 0;
+    }
+
+    #ubisoftLinkAdBox {
+        width: 153px;
+        height: 60px;
+        position: absolute;
+        left: 2%;
+        bottom: 0;
+    }
+
+    #facebkLinkAdBox {
+        width: 153px;
+        height: 25px;
+        position: absolute;
+        left: 30%;
+        bottom: 25px;
+    }
+
+    #twitterLinkAdBox {
+        width: 153px;
+        height: 25px;
+        position: absolute;
+        left: 47%;
+        bottom: 25px;
+    }
+
+    #preOrderLinkAdBox {
+        width: 169px;
+        height: 45px;
+        position: absolute;
+        left: 74%;
+        bottom: 20px;
+    }
+
+    #adboxImg {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /****************END main adBox************/
+    /******TIMER COUNTDOWN****/
+    #displayTimer {
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        left: 40%;
+        top: 20%;
+
+        /*  margin-left: 150px;*/
+
+    }
+
+    #timerDiv {
+        background-color: azure;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: 50%;
+        top: 5%;
+    }
+
+    /****END***/
+    /****Video Trailer */
+    #trailerDiv {
+        position: absolute;
+        top: 17%;
+        left: 45%;
+    }
+
+    #trailerButtonDiv{
+        color: aqua;
+        position: absolute;
+        bottom: 8px;
+        left: 35%;
+    }
+    button{
+        background-color: aqua;
+        width: 150px;
+        height: 50px;
+        font-size: large;
+        border-radius:2%;
+    }
+    .mbhide{
+        display: block;
+    }
+
+    #trailerButton:hover{
+        background-color: rgba(93, 145, 187, 0.9);
+    }
+
+    /**/
+    #loaderDiv {
+        position: absolute;
+        height: 10px;
+        width: 0;
+        background-color: rgba(93, 145, 187, 0.9);
+        top: 43%;
+        left: 20%;
+    }
+
+    #sliderContainer{
+        position: absolute;
+        height: 45%;
+        width: 20%;
+        background-color: rgba(93, 145, 187, 0.9);
+        top: 41%;
+        left: 5%;
+    }
+
+    /**********SLIDER*******/
+
+    #overflow{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .photo img{
+        width: 100%;
+    }
+
+    #slides .inner{
+        width: 500%;
+    }
+
+    #slides .photo{
+        float: left;
+        width: 20%;
+        position: relative;
+    }
+
+    input{
+        display: none;
+    }
+
+    #slide1:checked ~ #slides .inner{
+        margin-left:0 ;
+    }
+    #slide2:checked ~ #slides .inner{
+        margin-left: -100%;
+    }
+    #slide3:checked ~ #slides .inner{
+        margin-left: -200%;
+    }
+
+    #slides .inner{
+        transition: all 1s ease-in-out;
+    }
+
+    #slider{
+        text-align: center;
+        margin: 0;
+    }
+
+    #active label{
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background: red;
+        display: inline-block;
+    }
+    #active{
+        text-align: center;
+    }
+
+    /*******Default ad box animation*******/
+    @keyframes adBoxAnimation {
+        0% {
+            background: url("../images/JPGv4/300x250_1.jpg");
+        }
+        25% {
+            background: url("../images/JPGv4/300x250_2.jpg");
+        }
+        50% {
+            background: url("../images/JPGv4/300x250_3.jpg");
+        }
+        75% {
+            background: url("../images/JPGv4/300x250_2.jpg");
+        }
+        100% {
+            background: url("../images/JPGv4/300x250_1.jpg");
+        }
+    }
+
+    .linkAdBox:hover {
+        cursor: pointer;
+    }
+
+    /*********************/
+    .divOnHover{
+        transition:all 3s;
+        -o-transition:all 3s;
+        -moz-transition:all 3s;
+        -ms-transition:all 3s;
+        -webkit-transition:all 3s;
+    }
+    .divOnHover:hover{
+        transform: scale(1.1);
+    }
+
+    .psOnHover{
+        transition: all 3s;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.98);
+    }
+    .psOnHover:hover{
+        transform: scale(1.1);
+    }
+    /**/
+    #mbWatchDogsLogo{
+        display: none;
+    }
+    #centerMobileDiv{
+        display: none;
+    }
+    #rollOverDiv{
+        display: none;
+    }
+    #bottomMobileDiv{
+        display: none;
+    }
+    #exitMobileDiv{
+        display: none;
+    }
+    #mobileLogo{
+        display: none;
+    }
+    #messageBox{
+        display: none;
+    }
+    #linkRollOver{
+        display: none;
+    }
+    #ps3_Img, #ps4_Img, #mbUbisoftLink{
+        display: none;
+    }
+}
+
+/**************************END DESKTOP***********************/
