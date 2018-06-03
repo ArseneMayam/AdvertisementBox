@@ -35,7 +35,7 @@ body {
 
 /******The main advertising modal box*******/
 #adbox {
-    background: url("../images/JPGv4/300x250_3.jpg") no-repeat center;
+    background: url("../layers/mobile/Layer_686@1X.jpeg") no-repeat center;
     background-size: cover;
     background-color: #fefefe;
     margin: auto; /* 15% from the top and centered */
@@ -96,6 +96,19 @@ body {
     position: absolute;
 }
 
+/*Logo*/
+#mbWatchDogsLogo{
+    width:199px ;
+    height: 32px;
+    position: absolute;
+    top:10%;
+    left: 35%;
+}
+
+.deskHide{
+    display: block;
+}
+
 .mobileTimerDiv {
     background-color: azure;
     border-radius: 50%;
@@ -118,13 +131,6 @@ body {
     display: none;
 }
 
-#mbWatchDogsLogo {
-    background-color: rgba(93, 145, 187, 0);
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    top: 8%;
-}
 
 #centerMobileDiv {
     position: absolute;
@@ -159,21 +165,14 @@ body {
     background-color: rgba(254, 43, 57, 0.1);
 }
 
-#mobileLogo {
-    background-color: rgba(93, 145, 187, 0.3);
-    position: absolute;
-    width: 40%;
-    height: 100%;
-    left: 15%;
-    box-shadow: 12px 12px 30px rgba(187, 55, 63, 0.98);
-    border-radius: 12%;
-}
 
 #messageBox {
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    left: 3%;
+    background: url("../Layers/mobile/Rectangle_11@1X.png");
+    position: fixed;
+    width: 223px;
+    height: 163px;
+    left: 20%;
+    border: 2px solid aqua;
 }
 
 /**/
@@ -202,7 +201,7 @@ body {
     bottom: 0;
 }
 
-#ps3_Img:hover, #ps4_Img:hover, #mbUbisoftLink:hover, #messageBox:hover {
+#ps3_Img:hover, #ps4_Img:hover, #mbUbisoftLink:hover{
     cursor: pointer;
 }
 
@@ -591,9 +590,6 @@ body {
         transform: scale(1.1);
     }
 
-    #mbWatchDogsLogo {
-        display: none;
-    }
 
     #centerMobileDiv {
         display: none;
@@ -611,19 +607,11 @@ body {
         display: none;
     }
 
-    #mobileLogo {
-        display: none;
-    }
-
-    #messageBox {
-        display: none;
-    }
-
     #linkRollOver {
         display: none;
     }
 
-    #ps3_Img, #ps4_Img, #mbUbisoftLink {
+    .deskHide, #ps3_Img, #ps4_Img, #mbUbisoftLink {
         display: none;
     }
 
@@ -1027,39 +1015,7 @@ body {
     }
 
     /**/
-    #mbWatchDogsLogo {
-        display: none;
-    }
-
-    #centerMobileDiv {
-        display: none;
-    }
-
-    #rollOverDiv {
-        display: none;
-    }
-
-    #bottomMobileDiv {
-        display: none;
-    }
-
-    #exitMobileDiv {
-        display: none;
-    }
-
-    #mobileLogo {
-        display: none;
-    }
-
-    #messageBox {
-        display: none;
-    }
-
-    #linkRollOver {
-        display: none;
-    }
-
-    #ps3_Img, #ps4_Img, #mbUbisoftLink {
+    .deskHide, #ps3_Img, #ps4_Img, #mbUbisoftLink,#linkRollOver, #exitMobileDiv, #bottomMobileDiv, #rollOverDiv,  #centerMobileDiv {
         display: none;
     }
 }
