@@ -275,6 +275,7 @@ body{
     }
 
     #quitAdBox {
+        background: url("../layers/medium_desktop/EXIT.png") no-repeat;
         width: 45px;
         height: 45px;
         position: absolute;
@@ -282,7 +283,14 @@ body{
         top: 20px;
     }
 
+    #exitimg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
     #joinLinkAdBox {
+        background: url("../Layers/medium_desktop/Menu_Rectangle.jpeg");
         width: 120px;
         height: 60px;
         position: absolute;
@@ -308,6 +316,12 @@ body{
         position: absolute;
         left: 58%;
         top: 0;
+    }
+
+    .topMenu{
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
     }
 
     #ubisoftLinkAdBox {
@@ -434,7 +448,7 @@ body{
 
     /*Watch Dogs Logo Animation*/
     #watchDogsLogo{
-        background-color: rgba(93, 145, 187, 0.3);
+       /* background-color: rgba(93, 145, 187, 0.3);*/
         position: absolute;
         width: 24%;
         height: 50px;
@@ -443,6 +457,10 @@ body{
         box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.98);
 
     }
+    #watchDogsLogoLayer{
+
+    }
+
 
 
     /*End*/
@@ -456,11 +474,22 @@ body{
         left: 5%;
         box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.98);
         animation: preOderAnimation 1s linear 0.1s infinite ;
+        cursor: pointer;
+
+        display: flex;
+    }
+
+    #preOrderAvailable{
+        position: absolute;
+        right: 0;
+        top: 33%;
+    }
+    #availableImg{
+        display: block;
     }
     /*END*/
     /*PS4 Image*/
     #ps4_1{
-        background-color: rgba(93, 145, 187, 0.5);
         position: absolute;
         width: 23%;
         height: 45%;
@@ -469,12 +498,15 @@ body{
     }
 
     #ps4_2{
-        background-color: rgba(93, 145, 187, 0.5);
         position: absolute;
         width: 24%;
-        height: 20%;
-        top:65%;
+        height: 45%;
+        top:41%;
         left: 50%;
+    }
+    #dvd2{
+        max-width: 100%;
+        max-height: 100%;
     }
 
     /*************/
@@ -531,7 +563,7 @@ body{
         position: absolute;
         height: 45%;
         width: 20%;
-        background-color: rgba(93, 145, 187, 0.9);
+        /*background-color: rgba(93, 145, 187, 0.9);*/
         top: 41%;
         left: 5%;
     }
@@ -674,7 +706,7 @@ body{
 
     /******The main advertising modal box*******/
     #adbox {
-        background: url("../images/JPGv4/960x600_JOIN.jpg") no-repeat center;
+      /*  background: url("../layers/Layer_672.png") no-repeat center;*/
         background-color: #fefefe;
         margin: auto; /* 15% from the top and centered */
         border: 1px solid #888;
@@ -684,6 +716,7 @@ body{
     }
 
     #quitAdBox {
+        background: url("../layers/medium_desktop/EXIT.png") no-repeat ;
         width: 45px;
         height: 45px;
         position: absolute;
@@ -783,14 +816,14 @@ body{
     /****Video Trailer */
     #trailerDiv {
         position: absolute;
-        top: 17%;
+        top: 24%;
         left: 45%;
     }
 
     #trailerButtonDiv{
         color: aqua;
         position: absolute;
-        bottom: 8px;
+        bottom: -18%;
         left: 35%;
     }
     button{
@@ -822,7 +855,6 @@ body{
         position: absolute;
         height: 45%;
         width: 20%;
-        background-color: rgba(93, 145, 187, 0.9);
         top: 41%;
         left: 5%;
     }

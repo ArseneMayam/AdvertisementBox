@@ -82,15 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
     move();
     /*****Ad Box script***********/
 // quitting the Ad box
-    quitAdBox.addEventListener("mouseover", function () {
-        quitAdBox.style.backgroundColor = "rgba(93, 145, 187, 0.5)";
-        //modalbox.style.display ="none";
-
-    });
-    quitAdBox.addEventListener("mouseleave", function () {
-        quitAdBox.style.backgroundColor = "rgba(93, 145, 187, 0.0)";
-
-    });
     quitAdBox.addEventListener("click", function () {
         quit();
     });
