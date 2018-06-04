@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("exitMobileDiv", exitMobileDiv);
     let messageBox = document.getElementById("messageBox");
     let linkRollOver = document.getElementById("linkRollOver");
-    
+
     /*defaultAdbox.addEventListener("click",function () {
      modalbox.style.display = "block";
      defaultAdbox.style.backgroundColor ="lightblue";
