@@ -34,11 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("exitMobileDiv", exitMobileDiv);
     let messageBox = document.getElementById("messageBox");
     let linkRollOver = document.getElementById("linkRollOver");
-    let ps3_Img = document.getElementById("ps3_Img");
-    let ps4_Img = document.getElementById("ps4_Img");
-    let mbUbisoftLink = document.getElementById("mbUbisoftLink");
-
-
+    
     /*defaultAdbox.addEventListener("click",function () {
      modalbox.style.display = "block";
      defaultAdbox.style.backgroundColor ="lightblue";
@@ -83,6 +79,12 @@ document.addEventListener("DOMContentLoaded", function () {
     /*****Ad Box script***********/
 // quitting the Ad box
     quitAdBox.addEventListener("click", function () {
+       // window.alert("click");
+        quit();
+    });
+    let mbExitImg = document.getElementById("mbExitImg");
+    mbExitImg.addEventListener("click",function () {
+       // window.alert("click");
         quit();
     });
 // redirection links and events
@@ -148,15 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
     messageBox.addEventListener("click", function () {
         window.open("https://www.youtube.com/watch?v=e_q-s3QdmU8");
     });
-    ps3_Img.addEventListener("click", function () {
-        window.open("https://www.playstation.com/fr-ca/games/watch-dogs-2-ps4/");
-    });
-    ps4_Img.addEventListener("click", function () {
-        window.open("https://www.playstation.com/fr-ca/games/watch-dogs-2-ps4/");
-    });
-    mbUbisoftLink.addEventListener("click", function () {
-        window.open("http://montreal.ubisoft.com/fr/");
-    });
+
     linkRollOver.addEventListener("click", function () {
         window.open("https://www.playstation.com/fr-ca/games/watch-dogs-2-ps4/");
     });
@@ -176,6 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
     let quit = () => {
+        console.log("DANS FONCTION QUIT");
         time = 3;
         displayTimer.innerHTML = '';
         modalbox.style.display = "none";

@@ -102,7 +102,7 @@ body {
     height: 32px;
     position: absolute;
     top:10%;
-    left: 35%;
+    left: 28%;
 }
 
 .deskHide{
@@ -139,87 +139,54 @@ body {
     top: 22%;
 }
 
-#rollOverDiv {
-    position: absolute;
-    width: 100%;
-    height: 11%;
-    top: 74%;
-}
-
 #bottomMobileDiv {
     position: absolute;
     width: 100%;
-    height: 12%;
+    height: 27px;
     bottom: 0;
 }
-
+#bottomLogo{
+    padding-left: 2%;
+}
 #exitMobileDiv {
-    background: url("../images/close-window.png") no-repeat center;
+    background: url("../Layers/mobile/EXIT.png") no-repeat center;
     position: absolute;
     width: 10%;
     height: 8%;
     right: 0;
 }
-
-#exitMobileDiv:hover {
-    background-color: rgba(254, 43, 57, 0.1);
+#exitMobileDiv:hover{
+    cursor: pointer;
+}
+#mbExitImg{
+    position: absolute;
+    top: 25%;
+    left: 20%;
 }
 
-
 #messageBox {
-    background: url("../Layers/mobile/Rectangle_11@1X.png");
     position: fixed;
     width: 223px;
     height: 163px;
     left: 20%;
     border: 2px solid aqua;
 }
+#msgBoxImg{
+    padding: 5%;
+    padding-top: 3%;
+}
+#playLink{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+}
+#newMsg{
+    position: absolute;
+    bottom:23%;
+    left: 20%;
+}
 
 /**/
-#linkRollOver {
-    box-shadow: inset 0 0 0 1px #b5d4ea;
-    position: absolute;
-    width: 69%;
-    height: 100%;
-    left: 19%;
-    bottom: 0;
-}
-
-#linkRollOver:hover {
-    cursor: pointer;
-    -moz-transition: 1s ease-in-out;
-    -webkit-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
-}
-
-#ps3_Img {
-    position: absolute;
-    width: 30%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-}
-
-#ps3_Img:hover, #ps4_Img:hover, #mbUbisoftLink:hover{
-    cursor: pointer;
-}
-
-#ps4_Img {
-    position: absolute;
-    width: 40%;
-    height: 100%;
-    left: 30%;
-    bottom: 0;
-}
-
-#mbUbisoftLink {
-    position: absolute;
-    width: 30%;
-    height: 100%;
-    right: 0;
-    bottom: 0;
-}
 
 /*************/
 .divOnHover {
@@ -590,28 +557,7 @@ body {
         transform: scale(1.1);
     }
 
-
-    #centerMobileDiv {
-        display: none;
-    }
-
-    #rollOverDiv {
-        display: none;
-    }
-
-    #bottomMobileDiv {
-        display: none;
-    }
-
-    #exitMobileDiv {
-        display: none;
-    }
-
-    #linkRollOver {
-        display: none;
-    }
-
-    .deskHide, #ps3_Img, #ps4_Img, #mbUbisoftLink {
+    .deskHide{
         display: none;
     }
 
@@ -1015,7 +961,7 @@ body {
     }
 
     /**/
-    .deskHide, #ps3_Img, #ps4_Img, #mbUbisoftLink,#linkRollOver, #exitMobileDiv, #bottomMobileDiv, #rollOverDiv,  #centerMobileDiv {
+    .deskHide {
         display: none;
     }
 }
