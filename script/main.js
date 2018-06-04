@@ -79,12 +79,12 @@ document.addEventListener("DOMContentLoaded", function () {
     /*****Ad Box script***********/
 // quitting the Ad box
     quitAdBox.addEventListener("click", function () {
-       // window.alert("click");
+        // window.alert("click");
         quit();
     });
     let mbExitImg = document.getElementById("mbExitImg");
-    mbExitImg.addEventListener("click",function () {
-       // window.alert("click");
+    mbExitImg.addEventListener("click", function () {
+        // window.alert("click");
         quit();
     });
 // redirection links and events
